@@ -1,3 +1,3 @@
-const baseURL = "https://webwatchtower.onrender.com";
+const baseURL = "https://webwatchtowerbackend.onrender.com";
 
 export { baseURL };
