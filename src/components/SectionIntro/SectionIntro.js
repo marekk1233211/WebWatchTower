@@ -49,11 +49,12 @@ const SectionIntro = () => {
         hour: null,
         minutes: null,
       };
-      fetch("http://ip-api.com/json/")
+
+      fetch("https://ipinfo.io/json?token=4ed453de9b3fa0")
         .then((response) => response.json())
-        .then((ipData) => {
-          data.location = ipData.country;
-          console.log("Kraj: " + data.location);
+        .then((jsonResponse) => {
+          data.location = jsonResponse.country;
+          console.log("Kraj: " + jsonResponse.country);
 
           // Ustal rodzaj urządzenia
           if (isDesktop) {
