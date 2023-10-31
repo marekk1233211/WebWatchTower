@@ -1,0 +1,28 @@
+.sectionWrapper {
+  padding: 20px;
+}
+.chartBox {
+  width: 50%;
+  height: 45%;
+}
+.description {
+  padding: 20px 50px 20px 50px;
+}
+@media (max-width: 980px) {
+  .content {
+    padding: 0;
+  }
+  .chartCard {
+    width: 100%;
+  }
+  .chartBox {
+    height: 600px;
+    width: 300px;
+  }
+  .chartBox canvas {
+    height: 500px !important;
+  }
+  .sectionWrapper {
+    padding: 0;
+  }
+}

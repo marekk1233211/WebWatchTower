@@ -1,0 +1,11 @@
+@import "../../Global.scss";
+.bgcWrapper {
+  background-color: $color_section_2_blue_1;
+}
+
+@media (min-width: 1280px) {
+  .sectionsWrapper {
+    margin-left: 18em;
+    padding-top: 0;
+  }
+}

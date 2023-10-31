@@ -1,0 +1,53 @@
+@import "../../../Global.scss";
+.sectionWrapper {
+  display: flex;
+  min-height: 22.5em;
+}
+.imgWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5em 2.5em 3em 5em;
+}
+.imgWrapper img {
+  width: 12.5em;
+}
+.content {
+  width: 55em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 5em 5em 3em 2.5em;
+}
+.color_section_2_blue_1 {
+  background-color: #007bff; /* Tutaj ustaw kolor tła dla klasa color_section_2_blue_1 */
+}
+h1 {
+  overflow: auto;
+}
+@media screen and (max-width: 980px) {
+  .imgWrapper img {
+    width: 15em;
+  }
+  .sectionWrapper {
+    flex-direction: column;
+  }
+  .imgWrapper {
+    padding: 3em 2.5em 0em 2.5em;
+  }
+  .content {
+    width: 100%;
+    padding: 2.5em 2.5em 3em 2.5em;
+  }
+}
+@media (max-width: 736px) {
+  .imgWrapper img {
+    width: 10em;
+  }
+}
+@media screen and (max-width: 315px) {
+  .imgWrapper img {
+    width: 5em;
+  }
+}

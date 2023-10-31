@@ -1,0 +1,92 @@
+@import "../../Global.scss";
+
+.innerWrapper {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.5em;
+  width: 100%;
+  background-color: $color_header_purple;
+  z-index: 10000;
+}
+.list {
+  display: flex;
+  list-style: none;
+}
+.list li {
+  margin: 0 0 0 2em;
+}
+.list li a {
+  position: relative;
+  padding: 1.35em 0;
+  color: $color_font_white;
+  font-size: 0.6em;
+  font-weight: bold;
+  letter-spacing: 0.25em;
+  outline: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.activeLink:before,
+.activeLink:after {
+  border-radius: 0.2em;
+  bottom: 0;
+  content: "";
+  height: 0.2em;
+  position: absolute;
+  right: 0;
+  width: 100%;
+}
+
+.list li a:before {
+  background: #3c2c62;
+}
+
+.list li a:after {
+  background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
+  background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
+  background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
+  background-image: linear-gradient(to right, #5e42a6, #b74e91);
+  -moz-transition: max-width 0.2s ease;
+  -webkit-transition: max-width 0.2s ease;
+  -ms-transition: max-width 0.2s ease;
+  transition: max-width 0.2s ease;
+  max-width: 100%; // set on 0 by default, on active it has to be 100%;
+}
+@media (min-width: 1280px) {
+  .innerWrapper {
+    display: block;
+    width: 18em;
+    height: 100vh;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100%;
+    padding: 2.5em 2.5em 0.5em 2.5em;
+    text-align: right;
+  }
+  .list {
+    display: block;
+    // display: flex;
+    // flex-direction: column;
+    margin: 0 0 2em 0;
+  }
+  .list li {
+    margin: 1.5em 0 0 0;
+  }
+  .list li a {
+    display: inline-block;
+    padding: 1.35em;
+    width: 100%;
+  }
+}
+@media (max-width: 736px) {
+  .innerWrapper {
+    display: none;
+  }
+}

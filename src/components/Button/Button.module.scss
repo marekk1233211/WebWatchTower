@@ -1,0 +1,14 @@
+@import "../../Global.scss";
+.btn {
+  height: calc(4.75em + 2px);
+  padding: 0 3.75em;
+  background-color: transparent;
+  border: 1px solid;
+  border-color: rgba(255, 255, 255, 0.15);
+  border-radius: 3em;
+  color: $color_font_white;
+  font-size: 0.6em;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
