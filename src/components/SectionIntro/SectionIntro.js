@@ -162,6 +162,13 @@ const SectionIntro = () => {
             time of visit. Please click on consent button to share the data with
             us.
           </p>
+          <p>
+            <strong style={{ color: "white" }}>Please note !</strong> The
+            website is deployed on a free hosting service OnRender, so the
+            server may spin down after 15 minutes of inactivity. Therefore,{" "}
+            <strong>the first request may take a moment</strong> (approximately
+            2 minutes), so please be parient and refresh the page.
+          </p>
           <div className={styles.btns}>
             <Button handleOnClick={handleShowMoreInformationPopUp}>
               Learn more
