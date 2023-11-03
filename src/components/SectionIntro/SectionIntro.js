@@ -33,7 +33,7 @@ const SectionIntro = () => {
 
   const handleShowMoreInformationPopUp = () => {
     Swal.fire(
-      "We collect user's location data to know which country users are from. To do it we use http://ip-api.com/json/ API. Also we check the type of your device by react-device-detect library. To check the date of visiting the website we use constructor Date() which is embedded in JavaScript language"
+      "We collect user's location data to know which country users are from. To do it we use https://ipinfo.io API. Also we check the type of user's device by react-device-detect library. To check the date of visiting the website we use constructor Date() which is embedded in JavaScript language"
     );
   };
   const sendUserDataToServer = () => {
